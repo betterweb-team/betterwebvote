@@ -1,0 +1,21 @@
+{% if user.is_authenticated %}
+    <h1>Welcome {{ user.username }} to the Voting Interface</h1>
+
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Logout!">
+    </form>
+{% else %}
+    <h1>Login</h1>
+
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <span>Username: </span> <input type="text" name="username"> <br>
+        <span>Password: </span> <input type="text" name="password"> <br>
+        <input type="submit" value="Login!">
+    </form>
+{% endif %}
+
+{% if error %}
+    <p> {{ error }}</p>
+{% endif %}

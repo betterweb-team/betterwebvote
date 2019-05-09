@@ -1,0 +1,14 @@
+<h1> Headline: {{ headline.text }} </h1>
+
+<form action="{% url 'vote' headline.id %}" method="post">
+    {% csrf_token %}
+    {% for text, choice in choices %}
+        <input type="radio" name="choice" value="{{ choice }}"> <span>{{ text }}</span> <br>
+    {% endfor %}
+    <br>
+    <input type="submit" value="Vote!">
+</form>
+
+{% if error %}
+    <p>Error: {{ error }}</p>
+{% endif %}
