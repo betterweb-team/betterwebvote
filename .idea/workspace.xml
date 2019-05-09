@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d40593b1-2943-43b4-9272-f45315a9125b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vote/templates/blocks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vote/templates/blocks/messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/view_util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/admin_controls.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/admin_controls.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/purge_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/purge_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vote/views/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/views/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/views/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/general.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vote/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="289">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -53,20 +41,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vote/views/general.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="603">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vote/views/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vote/templates/vote/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -127,9 +124,9 @@
         <option value="$PROJECT_DIR$/vote/templates/vote/index.html" />
         <option value="$PROJECT_DIR$/vote/templates/vote/login.html" />
         <option value="$PROJECT_DIR$/util/view_util.py" />
-        <option value="$PROJECT_DIR$/vote/views/admin.py" />
         <option value="$PROJECT_DIR$/vote/views/general.py" />
         <option value="$PROJECT_DIR$/vote/templates/vote/detail.html" />
+        <option value="$PROJECT_DIR$/vote/views/admin.py" />
       </list>
     </option>
   </component>
@@ -144,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,20 +174,12 @@
               <item name="betterwebvote" type="b2602c69:ProjectViewProjectNode" />
               <item name="betterwebvote" type="462c0819:PsiDirectoryNode" />
               <item name="vote" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="vote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="betterwebvote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="betterwebvote" type="462c0819:PsiDirectoryNode" />
-              <item name="vote" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,11 +317,12 @@
       <updated>1557355555120</updated>
       <workItem from="1557362744895" duration="13687000" />
       <workItem from="1557407121529" duration="10195000" />
+      <workItem from="1557443391422" duration="18000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23882000" />
+    <option name="totallyTimeSpent" value="23900000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,10 +334,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19159256" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
@@ -373,8 +364,8 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/betterwebvote$Run_Server.coverage" NAME="Run Server Coverage Results" MODIFIED="1557443411624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/betterwebvote$Migrate.coverage" NAME="Migrate Coverage Results" MODIFIED="1557414441467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/betterwebvote$Run_Server.coverage" NAME="Run Server Coverage Results" MODIFIED="1557437999101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/betterwebvote$Make_Migrations.coverage" NAME="Make Migrations Coverage Results" MODIFIED="1557414421483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
@@ -493,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vote/views/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="24" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vote/views/auth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -515,20 +496,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vote/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vote/views/general.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -536,7 +507,24 @@
     <entry file="file://$PROJECT_DIR$/vote/templates/vote/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vote/views/general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vote/views/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

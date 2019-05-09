@@ -39,7 +39,7 @@ def check_votes(req):
             vote_dist.append((VOTE_DICT[k], v))
 
         votes.append((headline, vote_dist, headline.vote_count))
-        votes.sort(key=lambda x: x[0].text)
+    votes.sort(key=lambda x: x[0].text)
 
     return render(req, 'vote/check_votes.html', {'votes': votes})
 
@@ -49,7 +49,6 @@ def purge_user_page(req):
     user_votes = []
     for user in User.objects.all():
         user_votes.append((user, Vote.objects.filter(user__id=user.id).order_by('-timestamp')))
-
     return render(req, 'vote/purge_user.html', {'user_votes': user_votes})
 
 
