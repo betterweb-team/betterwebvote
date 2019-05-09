@@ -9,8 +9,6 @@
     <input type="submit" value="Vote!">
 </form>
 
-{% if error %}
-    <p>Error: {{ error }}</p>
-{% endif %}
+{% include "blocks/messages.html" %}
 
 <a href="{% url 'index' %}" class="button"> <button>Back</button> </a>

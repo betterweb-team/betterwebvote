@@ -1,5 +1,7 @@
 <h1>{{ user.username }}, welcome to the Voting Interface</h1>
 
+{% include "blocks/messages.html" %}
+
 {% if headlines %}
     <ol>
         {% for headline in headlines %}
@@ -9,16 +11,16 @@
             </li>
         {% endfor %}
     </ol>
+
+    {% if more %}
+        <p>... {{ more }} more ...</p>
+    {% endif %}
     <br> <p>You have {{ headlines_size }} headline{{ headlines_size|pluralize }} to vote on.</p>
 {% else %}
     <h4>All done for today!</h4>
 {% endif %}
 
 <a href="{% url 'logout' %}" class="button"> <button>Logout</button> </a>
-
-{% if message %}
-    <p> {{ message }}</p>
-{% endif %}
 
 {% if user.is_superuser %}
     <br><br>

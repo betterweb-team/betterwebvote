@@ -1,28 +1,22 @@
 from django.urls import path
-from . import views
-from vote.views import admin, auth
+from vote.views import admin, auth, general
 
 urlpatterns = [
     # Index
-    path('', views.index, name='index'),
-    path('index', views.index, name='index'),
-    path('index/<str:message>', views.index, name='index'),
+    path('', general.index, name='index'),
 
-    # Login
-    path('login', auth.login_page, name='login_page'),
-    path('login/<str:message>', auth.login_page, name='login_page'),
+    # Login + Logout
+    path('login', auth.LoginFormView.as_view(), name='login'),
+    path('__logout', auth.logout_user, name='logout'),
 
     # Voting
-    path('detail/<int:headline_id>', views.detail, name='detail'),
-    path('vote/<int:headline_id>', views.vote, name='vote'),
+    path('detail/<int:headline_id>', general.detail, name='detail'),
+    path('vote/<int:headline_id>', general.vote, name='vote'),
 
     # Admin
     path('admin_controls', admin.admin_controls, name='admin_controls'),
     path('check_votes', admin.check_votes, name='check_votes'),
-    path('purge_user', admin.purge_user, name='purge_user'),
-    path('purge_user_process/<int:user_id>', admin.purge_user_process, name='purge_user_process'),
-
-    # Login Redirect URLS
-    path('login_user', auth.login_user, name='login'),
-    path('logout_user', auth.logout_user, name='logout')
+    path('purge_user', admin.purge_user_page, name='purge_user_page'),
+    path('__purge_user/<int:user_id>', admin.purge_user, name='purge_user'),
+    path('__import_headlines', admin.import_headlines, name='import_headlines')
 ]

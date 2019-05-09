@@ -1,26 +1,30 @@
-from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import render, redirect
-
-LOGIN_MSGS = {
-    'badcred': 'Invalid Username/Password!',
-    'nocred': 'Missing Username/Password!'
-}
+from django import forms
+from django.contrib import messages
+from django.contrib.auth import authenticate, logout, login
+from django.shortcuts import redirect
+from django.views.generic import FormView
 
 
-def login_page(req, message=None):
-    if message:
-        return render(req, 'vote/login.html', {'message': LOGIN_MSGS[message]})
-    return render(req, 'vote/login.html')
+class LoginForm(forms.Form):
+    username = forms.CharField(max_length=64, required=True)
+    password = forms.CharField(max_length=64, widget=forms.PasswordInput, required=True)
 
 
-def login_user(req):
-    user = authenticate(req, username=req.POST['username'], password=req.POST['password'])
-    if user:
-        login(req, user)
-        return redirect('index')
-    return redirect('login_page', 'badcred')
+class LoginFormView(FormView):
+    template_name = 'vote/login.html'
+    form_class = LoginForm
+    success_url = ''
+
+    def form_valid(self, form):
+        post = self.request.POST
+        user = authenticate(self.request, username=post['username'], password=post['password'])
+        if user:
+            login(self.request, user)
+            return redirect('index')
+        messages.warning(self.request, 'Invalid Username/Password!')
+        return redirect('login')
 
 
 def logout_user(req):
     logout(req)
-    return redirect('index')
+    return redirect('login')

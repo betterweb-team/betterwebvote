@@ -1,12 +1,9 @@
 <h1>Login</h1>
 
-<form action="{% url 'login' %}" method="post">
+<form method="post">
     {% csrf_token %}
-    <span>Username: </span> <input type="text" name="username"> <br>
-    <span>Password: </span> <input type="text" name="password"> <br>
+    {{ form.as_p }}
     <input type="submit" value="Login!">
 </form>
 
-{% if message %}
-    <p> {{ message }}</p>
-{% endif %}
+{% include "blocks/messages.html" %}

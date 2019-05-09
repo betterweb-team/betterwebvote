@@ -1,0 +1,9 @@
+{% for message in messages %}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}
+        <p style="color:red">{{ message }}</p>
+    {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+        <p style="color:darkgreen">{{ message }}</p>
+    {% else %}
+        <p>{{ message }}</p>
+    {% endif %}
+{% endfor %}

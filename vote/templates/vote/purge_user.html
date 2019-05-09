@@ -9,7 +9,7 @@
                     <li>"{{ vote.choice_str }}" vote for "{{ vote.headline.text }}" at {{ vote.timestamp }}</li>
                 {% endfor %}
             </ul> <br>
-            <a href="{% url 'purge_user_process' user.id %}" class="button"> <button>Purge</button> </a>
+            <a href="{% url 'purge_user' user.id %}" class="button"> <button>Purge</button> </a>
         </li>
     {% endfor %}
 </ul>
