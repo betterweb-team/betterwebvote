@@ -1,0 +1,18 @@
+<h1>Purge User Panel</h1>
+
+<ul>
+    {% for user, votes in user_votes %}
+        <li>
+            <p>User "{{ user.username }}"</p>
+            <ul>
+                {% for vote in votes %}
+                    <li>"{{ vote.choice_str }}" vote for "{{ vote.headline.text }}" at {{ vote.timestamp }}</li>
+                {% endfor %}
+            </ul> <br>
+            <a href="{% url 'purge_user_process' user.id %}" class="button"> <button>Purge</button> </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<br>
+<a href="{% url 'admin_controls' %}" class="button"> <button>Back to Admin Controls</button> </a>

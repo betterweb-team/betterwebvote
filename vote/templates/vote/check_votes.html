@@ -1,0 +1,19 @@
+<h1>Vote Distribution</h1>
+
+<ul>
+    {% for headline, dist, count in votes %}
+        <li>
+            <p>"{{ headline.text }}": {{ count }} vote{{ count|pluralize }}</p>
+            <ul>
+                {% for type, count2 in dist %}
+                    <li>{{ type }}: {{ count2 }} vote{{ count2|pluralize }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+
+<button>Export</button>
+
+<br><br>
+<a href="{% url 'admin_controls' %}" class="button"> <button>Back to Admin Controls</button> </a>

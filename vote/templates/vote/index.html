@@ -1,21 +1,26 @@
-{% if user.is_authenticated %}
-    <h1>Welcome {{ user.username }} to the Voting Interface</h1>
+<h1>{{ user.username }}, welcome to the Voting Interface</h1>
 
-    <form action="{% url 'logout' %}" method="post">
-        {% csrf_token %}
-        <input type="submit" value="Logout!">
-    </form>
+{% if headlines %}
+    <ol>
+        {% for headline in headlines %}
+            <li>
+                <span>{{ headline.text }}, published at {{ headline.pub_time }}</span> <br>
+                <a href="{% url 'detail' headline.id %}" class="button"> <button>Vote</button> </a> <br><br>
+            </li>
+        {% endfor %}
+    </ol>
+    <br> <p>You have {{ headlines_size }} headline{{ headlines_size|pluralize }} to vote on.</p>
 {% else %}
-    <h1>Login</h1>
-
-    <form action="{% url 'login' %}" method="post">
-        {% csrf_token %}
-        <span>Username: </span> <input type="text" name="username"> <br>
-        <span>Password: </span> <input type="text" name="password"> <br>
-        <input type="submit" value="Login!">
-    </form>
+    <h4>All done for today!</h4>
 {% endif %}
 
-{% if error %}
-    <p> {{ error }}</p>
+<a href="{% url 'logout' %}" class="button"> <button>Logout</button> </a>
+
+{% if message %}
+    <p> {{ message }}</p>
+{% endif %}
+
+{% if user.is_superuser %}
+    <br><br>
+    <a href="{% url 'admin_controls' %}" class="button"> <button>Admin Controls</button> </a>
 {% endif %}
