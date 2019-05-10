@@ -9,7 +9,7 @@ VOTE_CHOICE_OPTIONS = list(zip(VOTE_CHOICE_TEXT, VOTE_CHOICE))
 INDEX_ARTICLE_COUNT = 20
 
 
-@login_required(login_url='login_page')
+@login_required(login_url='login')
 def index(req):
     context = {'user': req.user}
     voted_already = Vote.objects.filter(user__id=req.user.id).values_list('headline')
@@ -27,14 +27,14 @@ def index(req):
     return render(req, 'vote/index.html', context)
 
 
-@login_required(login_url='login_page')
+@login_required(login_url='login')
 def detail(req, headline_id):
     headline = get_object_or_404(Headline, pk=headline_id)
     return render(req, 'vote/detail.html',
                   {'headline': headline, 'choices': VOTE_CHOICE_OPTIONS})
 
 
-@login_required(login_url='login_page')
+@login_required(login_url='login')
 def vote(req, headline_id):
     headline = get_object_or_404(Headline, pk=headline_id)
     if Vote.objects.filter(headline__id=headline_id, user__id=req.user.id).count() > 0:

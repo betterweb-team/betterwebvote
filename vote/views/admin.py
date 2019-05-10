@@ -15,7 +15,7 @@ for __k, __v in zip(VOTE_CHOICE, VOTE_CHOICE_TEXT):
 
 
 def admin_page(func):
-    @login_required(login_url='login_page')
+    @login_required(login_url='login')
     def view_wrapper(req, *args, **kwargs):
         if not req.user.is_superuser:
             messages.warning(req, 'Insufficient Permissions! (You were trying to access an admin page)')
