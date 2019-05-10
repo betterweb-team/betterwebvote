@@ -1,7 +1,12 @@
 from django.contrib import admin
 from .models import *
 
-for model in DB_MODELS:
-    admin.site.register(model)
 
 # Register your models here.
+class VoteModelAdmin(admin.ModelAdmin):
+    list_filter = ('user', 'headline')
+    list_display = ('headline', 'user', 'timestamp')
+
+
+admin.site.register(Headline)
+admin.site.register(Vote, VoteModelAdmin)

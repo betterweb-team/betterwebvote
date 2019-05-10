@@ -24,5 +24,6 @@
 
 {% if user.is_superuser %}
     <br><br>
-    <a href="{% url 'admin_controls' %}" class="button"> <button>Admin Controls</button> </a>
+    <a href="{% url 'admin_controls' %}" class="button"> <button>Admin Controls</button> </a> <br>
+    <a href="admin" class="button"> <button>Django Admin Panel</button> </a>
 {% endif %}
