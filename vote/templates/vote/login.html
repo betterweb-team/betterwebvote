@@ -1,9 +1,23 @@
-<h1>Login</h1>
+{% extends "base.html" %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Login!">
-</form>
+{% block title %} Login {% endblock %}
 
-{% include "blocks/messages.html" %}
+{% block page_name %}
+    login
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+    <div class="row">
+        <div class="col col-5 border rounded p-3">
+            <h1>Login</h1>
+
+            {% crispy form %}
+        </div>
+    </div>
+
+    <script>
+    $('.nav-item #logout').hide()
+    </script>
+{% endblock %}

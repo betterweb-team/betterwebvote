@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Import/Export Headlines {% endblock %}
+
+{% block page_name %}
+    import-export-headlines
+{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Import/Export Headlines</h1>
+        </div>
+    </div>
+
+    {#    BEGIN IMPORT SECTION#}
+    <div class="row mb-3 mt-2">
+        <div class="col col-4">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Import Headlines</h3>
+                    {% crispy form %}
+
+                    <p class="card-text small mt-3">
+                        Headline data can either be uploaded as a list of strings in JSON format or as raw text by
+                        separating the headlines with line breaks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {#        IMPORT SAMPLES#}
+        <div class="col col-3">
+            <div class="card bg-light import-sample">
+                <div class="card-header">
+                    <h5 class="card-title">Import Examples (JSON and Text)</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light">
+                        <div class="card-text">
+                            <pre>[
+    "Headline 1",
+    "Headline 2",
+    "Headline 3",
+    "florida man calls 911 because his mom won't pay for ihop"
+]
+                            </pre>
+                        </div>
+                    </li>
+                    <li class="list-group-item bg-light">
+                        <div class="card-text">
+                            <pre>Headline 1
+Headline 2
+Headline 3
+florida man calls 911 because his mom won't pay for ihop
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {#    BEGIN EXPORT SECTION#}
+    <div class="row">
+        <div class="col col-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Export Headlines</h3>
+                    <p class="card-text">You will be redirected to a new page with the raw exported data</p>
+                    <a href="{% url 'export_headlines' %}">
+                        <button class="btn btn-outline-info mb-2">Export Headlines</button>
+                    </a>
+                    <hr>
+                    <p class="card-text small">To allow this app to be used as training data. All votes of
+                        all headlines can
+                        be exported by clicking this button. The votes will be indexed by headline, and will contain the
+                        number of votes made for each option.</p>
+                </div>
+            </div>
+        </div>
+
+        {#        EXPORT SAMPLES#}
+        <div class="col">
+            <div class="card col-4 bg-light" id="export-headlines-sample">
+                <div class="card-body">
+                    <h5 class="card-title">Export Example</h5>
+                    <hr>
+
+                    <div class="card-text">
+                        <pre>{
+    "headline1": {
+        "-2": 1,
+        "-1": 2,
+        "0": 8,
+        "1": 25,
+        "2": 17,
+        "1000": 1
+    },
+    "headline2": {
+        "-2": 45,
+        "-1": 17,
+        "0": 8,
+        "1": 2,
+        "2": 0,
+        "1000": 1
+    },
+    ...
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var encodingOther = $('#id_encoding_other,[for=id_encoding_other]');
+        encodingOther.hide();
+
+        $('#id_encoding').on('change', function () {
+            if (this.value === 'other')
+                encodingOther.show();
+            else
+                encodingOther.hide();
+        });
+    </script>
+{% endblock %}

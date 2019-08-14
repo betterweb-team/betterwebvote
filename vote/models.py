@@ -16,8 +16,8 @@ class Headline(models.Model):
         return Vote.objects.filter(headline__id=self.id).count()
 
 
-VOTE_CHOICE = [-2, -1, 0, 1, 2]
-VOTE_CHOICE_TEXT = ['Far Left', 'Left', 'Center', 'Right', 'Far Right']
+VOTE_CHOICE = [-2, -1, 0, 1, 2, 1000]
+VOTE_CHOICE_TEXT = ['Far Left', 'Left', 'Center', 'Right', 'Far Right', 'Non-political Headline']
 
 
 class Vote(models.Model):

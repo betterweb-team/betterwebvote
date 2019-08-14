@@ -1,0 +1,18 @@
+* {
+  font-family: Ubuntu;
+}
+
+.form-group.is-invalid .invalid-feedback {
+  display: block;
+}
+
+pre {
+  color: rgba(255, 63, 113, 0.99);
+}
+
+#export-headlines-sample div div {
+  max-height: 14em;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=main.css.map */

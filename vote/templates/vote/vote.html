@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} Voting on "{{ headline.text }}" {% endblock %}
+
+{% block page_name %}
+    vote
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col col-7 p-4 border rounded">
+            <h1> Voting on headline: {{ headline.text }} </h1>
+
+            {% crispy form %}
+        </div>
+    </div>
+{% endblock %}

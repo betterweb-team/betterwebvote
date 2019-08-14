@@ -1,29 +1,59 @@
-<h1>{{ user.username }}, welcome to the Voting Interface</h1>
+{% extends "base.html" %}
 
-{% include "blocks/messages.html" %}
+{% block title %} BetterWeb Voting Interface {% endblock %}
 
-{% if headlines %}
-    <ol>
-        {% for headline in headlines %}
-            <li>
-                <span>{{ headline.text }}, published at {{ headline.pub_time }}</span> <br>
-                <a href="{% url 'detail' headline.id %}" class="button"> <button>Vote</button> </a> <br><br>
-            </li>
-        {% endfor %}
-    </ol>
+{% block page_name %}
+    home
+{% endblock %}
 
-    {% if more %}
-        <p>... {{ more }} more ...</p>
+{% block body %}
+    {% if headlines %}
+        <div class="row">
+            <div class="col">
+                <p>You have {{ headlines_size }} headline{{ headlines_size|pluralize }} to vote on.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                {#        VOTE TABLE#}
+                <table class="table table-bordered table-hover rounded">
+                    {#            HEADINGS#}
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Headline</th>
+                        <th scope="col">Publish Time</th>
+                        <th scope="col">Vote</th>
+                    </tr>
+                    </thead>
+
+                    {#            CODE FOR DIFFERENT HEADLINES#}
+                    <tbody>
+                    {% for headline in headlines %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ headline.text }}</td>
+                            <td>{{ headline.pub_time }}</td>
+                            <td><a href="{% url 'vote' headline.id %}" class="button">
+                                <button class="btn btn-sm btn-outline-primary">Vote</button>
+                            </a></td>
+                        </tr>
+                    {% endfor %}
+
+                    {#                IF TOO MANY HEADLINES#}
+                    {% if more %}
+                        <th scope="row">...</th>
+                        <td>... {{ more }} more ...</td>
+                    {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    {% else %}
+        <div class="row">
+            <h4>All done for today!</h4>
+        </div>
     {% endif %}
-    <br> <p>You have {{ headlines_size }} headline{{ headlines_size|pluralize }} to vote on.</p>
-{% else %}
-    <h4>All done for today!</h4>
-{% endif %}
-
-<a href="{% url 'logout' %}" class="button"> <button>Logout</button> </a>
-
-{% if user.is_superuser %}
-    <br><br>
-    <a href="{% url 'admin_controls' %}" class="button"> <button>Admin Controls</button> </a> <br>
-    <a href="admin" class="button"> <button>Django Admin Panel</button> </a>
-{% endif %}
+{% endblock %}

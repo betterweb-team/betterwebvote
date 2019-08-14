@@ -1,0 +1,31 @@
+* {
+  font-family: Ubuntu;
+}
+
+.form-group.is-invalid {
+  .invalid-feedback {
+    display: block;
+  }
+}
+
+// So that code displays properly
+pre {
+  color: rgba(255, 63, 113, 0.99);
+}
+
+.import-sample {
+  div {
+    div {
+      //overflow-x: scroll;
+    }
+  }
+}
+
+#export-headlines-sample {
+  div {
+    div {
+      max-height: 14em;
+      overflow-y: scroll;
+    }
+  }
+}

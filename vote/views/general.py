@@ -1,12 +1,13 @@
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Layout, Row, Column, Submit
+from django import forms
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 
 from vote.models import *
 
-
-VOTE_CHOICE_OPTIONS = list(zip(VOTE_CHOICE_TEXT, VOTE_CHOICE))
-INDEX_ARTICLE_COUNT = 20
+INDEX_ARTICLE_COUNT = 20  # Number of Headlines displayed per page
 
 
 @login_required(login_url='login')
@@ -27,29 +28,40 @@ def index(req):
     return render(req, 'vote/index.html', context)
 
 
-@login_required(login_url='login')
-def detail(req, headline_id):
-    headline = get_object_or_404(Headline, pk=headline_id)
-    return render(req, 'vote/detail.html',
-                  {'headline': headline, 'choices': VOTE_CHOICE_OPTIONS})
+# Form to select political bias
+class VoteChoicesForm(forms.Form):
+    choice = forms.ChoiceField(choices=[('', 'Select')] + list(zip(VOTE_CHOICE, VOTE_CHOICE_TEXT)),
+                               label='Political Bias')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.helper = FormHelper()
+        self.helper.layout = Layout(
+            Row(
+                Column('choice', css_class='form-group ml-4'),
+                css_class='form-row'
+            ),
+            Submit('submit', 'Vote!')
+        )
 
 
 @login_required(login_url='login')
 def vote(req, headline_id):
     headline = get_object_or_404(Headline, pk=headline_id)
     if Vote.objects.filter(headline__id=headline_id, user__id=req.user.id).count() > 0:
-        messages.warning(req, 'Duplicate vote!')
-        return redirect('index')
+        messages.error(req, 'Duplicate vote!')
+        return redirect('index', headline_id)
 
-    try:
-        if 'choice' not in req.POST:
-            raise ValueError('Choice not specified!')
-        choice = int(req.POST['choice'])
+    form = VoteChoicesForm(req.POST or None)
+
+    if form.is_valid():
+        choice = form.cleaned_data['choice']
         vote_entry = Vote(headline=headline, user=req.user, choice=choice, timestamp=datetime.now())
         vote_entry.save()
 
         messages.info(req, 'Success!')
         return redirect('index')
-    except ValueError as err:
-        messages.warning(req, str(err))
-        return redirect('detail', headline_id)
+
+    return render(req, 'vote/vote.html',
+                  {'headline': headline, 'form': form})
