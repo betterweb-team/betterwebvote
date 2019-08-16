@@ -11,13 +11,13 @@ class Headline(models.Model):
     def __str__(self):
         return self.text
 
-    @property
-    def vote_count(self):
-        return Vote.objects.filter(headline__id=self.id).count()
+    def vote_count(self, choice):
+        return Vote.objects.filter(headline__id=self.id, choice=choice).count()
 
 
-VOTE_CHOICE = [-2, -1, 0, 1, 2, 1000]
-VOTE_CHOICE_TEXT = ['Far Left', 'Left', 'Center', 'Right', 'Far Right', 'Non-political Headline']
+VOTE_CHOICES = [-2, -1, 0, 1, 2, 1000]
+VOTE_CHOICES_TEXT = ['Far Left', 'Left', 'Center', 'Right', 'Far Right', 'Non-political Headline']
+VOTE_CHOICES_TEXT_SHORT = ['FL', 'L', 'C', 'R', 'FR', 'NPH']
 
 
 class Vote(models.Model):
@@ -28,7 +28,7 @@ class Vote(models.Model):
 
     @property
     def choice_str(self):
-        return VOTE_CHOICE_TEXT[bisect_left(VOTE_CHOICE, self.choice)]
+        return VOTE_CHOICES_TEXT[bisect_left(VOTE_CHOICES, self.choice)]
 
     def __str__(self):
         return 'Vote for "%s": %s' % (self.headline, self.choice_str)

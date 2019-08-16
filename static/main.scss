@@ -1,24 +1,25 @@
+// So that messages float to the bottom
+#messages-div {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
+// Extra form stuff
 * {
   font-family: Ubuntu;
 }
 
+// No idea what this does but I don't want to remove it
 .form-group.is-invalid {
   .invalid-feedback {
     display: block;
   }
 }
 
-// So that code displays properly
+// So that code samples display properly
 pre {
   color: rgba(255, 63, 113, 0.99);
-}
-
-.import-sample {
-  div {
-    div {
-      //overflow-x: scroll;
-    }
-  }
 }
 
 #export-headlines-sample {
@@ -29,3 +30,5 @@ pre {
     }
   }
 }
+
+// Lighter contextual backgrounds :)

@@ -1,3 +1,9 @@
+#messages-div {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
 * {
   font-family: Ubuntu;
 }

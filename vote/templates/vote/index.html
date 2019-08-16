@@ -21,7 +21,7 @@
                     {#            HEADINGS#}
                     <thead class="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Headline</th>
                         <th scope="col">Publish Time</th>
                         <th scope="col">Vote</th>
@@ -32,7 +32,7 @@
                     <tbody>
                     {% for headline in headlines %}
                         <tr>
-                            <th scope="row">{{ forloop.counter }}</th>
+                            <th scope="row">{{ headline.id }}</th>
                             <td>{{ headline.text }}</td>
                             <td>{{ headline.pub_time }}</td>
                             <td><a href="{% url 'vote' headline.id %}" class="button">

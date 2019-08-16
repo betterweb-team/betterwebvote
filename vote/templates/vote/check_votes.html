@@ -1,19 +1,47 @@
-<h1>Vote Distribution</h1>
+{% extends "base.html" %}
 
-<ul>
-    {% for headline, dist, count in votes %}
-        <li>
-            <p>"{{ headline.text }}": {{ count }} vote{{ count|pluralize }}</p>
-            <ul>
-                {% for type, count2 in dist %}
-                    <li>{{ type }}: {{ count2 }} vote{{ count2|pluralize }}</li>
+{% block title %}Check Votes{% endblock %}
+
+{% block page_name %}
+    check-votes
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Vote Distribution</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered table-hover rounded">
+                {#            HEADINGS#}
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Headline</th>
+{#                    ADDING ALL CHOICES#}
+                    {% for choice_text in choices_text %}
+                        <th scope="col">{{ choice_text }}</th>
+                    {% endfor %}
+                    <th scope="col">Total Votes</th>
+                </tr>
+                </thead>
+
+                {#            CODE FOR DIFFERENT HEADLINES#}
+                <tbody>
+                {% for headline, dist, total in votes %}
+                    <tr>
+                        <th scope="row">{{ headline.id }}</th>
+                        <td>{{ headline.text }}</td>
+                        {% for count in dist %}
+                            <td>{{ count }}</td>
+                        {% endfor %}
+                        <td>{{ total }}</td>
+                    </tr>
                 {% endfor %}
-            </ul>
-        </li>
-    {% endfor %}
-</ul>
-
-<button>Export</button>
-
-<br><br>
-<a href="{% url 'admin_controls' %}" class="button"> <button>Back to Admin Controls</button> </a>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

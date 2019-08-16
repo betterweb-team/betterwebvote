@@ -30,7 +30,7 @@ def index(req):
 
 # Form to select political bias
 class VoteChoicesForm(forms.Form):
-    choice = forms.ChoiceField(choices=[('', 'Select')] + list(zip(VOTE_CHOICE, VOTE_CHOICE_TEXT)),
+    choice = forms.ChoiceField(choices=[('', 'Select')] + list(zip(VOTE_CHOICES, VOTE_CHOICES_TEXT)),
                                label='Political Bias')
 
     def __init__(self, *args, **kwargs):
@@ -60,7 +60,7 @@ def vote(req, headline_id):
         vote_entry = Vote(headline=headline, user=req.user, choice=choice, timestamp=datetime.now())
         vote_entry.save()
 
-        messages.info(req, 'Success!')
+        messages.success(req, 'Success!')
         return redirect('index')
 
     return render(req, 'vote/vote.html',

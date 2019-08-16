@@ -7,8 +7,6 @@
     import-export-headlines
 {% endblock %}
 
-{% load crispy_forms_tags %}
-
 {% block body %}
     <div class="row">
         <div class="col">
@@ -22,6 +20,7 @@
             <div class="card bg-light">
                 <div class="card-body">
                     <h3 class="card-title">Import Headlines</h3>
+                    {% load crispy_forms_tags %}
                     {% crispy form %}
 
                     <p class="card-text small mt-3">
@@ -72,7 +71,7 @@ florida man calls 911 because his mom won't pay for ihop
                     <h3 class="card-title">Export Headlines</h3>
                     <p class="card-text">You will be redirected to a new page with the raw exported data</p>
                     <a href="{% url 'export_headlines' %}">
-                        <button class="btn btn-outline-info mb-2">Export Headlines</button>
+                        <button class="btn btn-primary mb-2">Export Headlines</button>
                     </a>
                     <hr>
                     <p class="card-text small">To allow this app to be used as training data. All votes of
@@ -118,9 +117,12 @@ florida man calls 911 because his mom won't pay for ihop
     </div>
 
     <script>
-        var encodingOther = $('#id_encoding_other,[for=id_encoding_other]');
-        encodingOther.hide();
+        var encodingOther = $('#id_encoding_other, [for=id_encoding_other], #error_1_id_encoding_other');
 
+        console.log($('#id_encoding').val());
+        if ($('#id_encoding').val() !== 'other') {
+            encodingOther.hide();
+        }
         $('#id_encoding').on('change', function () {
             if (this.value === 'other')
                 encodingOther.show();

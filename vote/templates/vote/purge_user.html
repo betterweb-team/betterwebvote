@@ -1,18 +1,91 @@
-<h1>Purge User Panel</h1>
+{% extends "base.html" %}
 
-<ul>
-    {% for user, votes in user_votes %}
-        <li>
-            <p>User "{{ user.username }}"</p>
-            <ul>
-                {% for vote in votes %}
-                    <li>"{{ vote.choice_str }}" vote for "{{ vote.headline.text }}" at {{ vote.timestamp }}</li>
-                {% endfor %}
-            </ul> <br>
-            <a href="{% url 'purge_user' user.id %}" class="button"> <button>Purge</button> </a>
-        </li>
-    {% endfor %}
-</ul>
+{% block title %}Purge User Votes{% endblock %}
 
-<br>
-<a href="{% url 'admin_controls' %}" class="button"> <button>Back to Admin Controls</button> </a>
+{% block page_name %}
+    purge-user
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Purge User Panel</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                {#                LIST OF USERS TO PURGE#}
+
+                {#            USER NAMES AND CLICKABLE PURGE LINKS#}
+                <div class="col-4">
+                    <h3>Users</h3>
+
+                    <div class="list-group" id="list-tab" role="tablist">
+                        {% for user, _, vote_count in user_votes %}
+                            <a class="list-group-item list-group-item-action {% if last_user.id == user.id %}active{% endif %}"
+                               id="list-user{{ forloop.counter }}-list"
+                               data-toggle="list"
+                               href="#list-user{{ forloop.counter }}" role="tab"
+                               aria-controls="home">{{ user.username }}
+                                <span class="badge badge-secondary badge-pill">{{ vote_count }} votes</span>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {#            ACTUAL TABLE OF VOTES AND PURGE BUTTON#}
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        {% for user, votes, count in user_votes %}
+                            <div class="tab-pane fade {% if last_user.id == user.id %}show active{% endif %}"
+                                 id="list-user{{ forloop.counter }}" role="tabpanel"
+                                 aria-labelledby="list-user{{ forloop.counter }}-list">
+                                {% if count %}
+                                    {#                                    BUTTON TO PURGE USER#}
+                                    <div class="mb-3">
+                                        <a href="{% url 'purge_user' user.id %}">
+                                            <button class="btn btn-outline-danger">
+                                                Purge User
+                                            </button>
+                                        </a>
+                                    </div>
+
+                                    <table class="table table-bordered table-hover rounded">
+                                        {#            HEADINGS#}
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Vote Choice</th>
+                                            <th scope="col">Headline</th>
+                                            <th scope="col">Vote Time</th>
+                                        </tr>
+                                        </thead>
+
+                                        {#            CODE FOR DIFFERENT VOTES#}
+                                        <tbody>
+                                        {% for vote in votes %}
+                                            <tr>
+                                                <th scope="row">{{ vote.id }}</th>
+                                                <td>{{ vote.choice_str }}</td>
+                                                <td>{{ vote.headline.text }}</td>
+                                                <td>{{ vote.timestamp }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                {% else %}
+                                    <div class="card">
+                                        <div class="card-body font-weight-bold">
+                                            This user has made no votes.
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
