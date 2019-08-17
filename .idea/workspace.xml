@@ -5,145 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d40593b1-2943-43b4-9272-f45315a9125b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vote/templates/raw_text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/autocomplete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/changelists.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/forms.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/responsive_rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/widgets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/fonts/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/fonts/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/calendar-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-addlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-alert.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-calendar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-changelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-deletelink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-no.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-unknown-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-unknown.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-viewlink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/icon-yes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/inline-delete.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/selector-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/sorting-icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/tooltag-add.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/img/tooltag-arrowright.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/SelectBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/SelectFilter2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/actions.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/autocomplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/change_form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/collapse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/inlines.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/inlines.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/jquery.init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/popup_response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/prepopulate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/prepopulate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/prepopulate_init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/timeparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/urlify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vote/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/blocks/messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/blocks/messages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/check_votes.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/check_votes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/import_export_headlines.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/import_export_headlines.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/templates/vote/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vote/templates/vote/purge_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/vote/templates/vote/purge_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vote/views/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/views/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vote/views/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/vote/views/general.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,32 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vote/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vote/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vote/templates/raw_text.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="394">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -210,10 +56,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vote/templates/vote/check_votes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vote/views/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="174" column="31" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
+            <state relative-caret-position="-847">
+              <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -222,31 +77,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vote/views/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vote/templates/vote/check_votes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vote/templates/vote/purge_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-456">
-              <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+            <state relative-caret-position="391">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="632">
+              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="70" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -283,6 +126,7 @@
       <find>&amp;nbsp;</find>
       <find>&lt;/code&gt;&lt;/pre&gt;</find>
       <find>print</find>
+      <find>&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;(.*?)&lt;/button&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>verbose_name=</replace>
@@ -294,6 +138,7 @@
       <replace>import_export_headlines</replace>
       <replace>&amp;nbsp;</replace>
       <replace>&lt;/pre&gt;&lt;/code&gt;</replace>
+      <replace>$1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -332,13 +177,13 @@
         <option value="$PROJECT_DIR$/vote/templates/blocks/crispy_file_field.html" />
         <option value="$PROJECT_DIR$/vote/templates/vote/import_export_headlines.html" />
         <option value="$PROJECT_DIR$/vote/templates/vote/check_votes.html" />
-        <option value="$PROJECT_DIR$/vote/templates/base.html" />
-        <option value="$PROJECT_DIR$/vote/templates/vote/purge_user.html" />
         <option value="$PROJECT_DIR$/vote/templates/blocks/messages.html" />
         <option value="$PROJECT_DIR$/vote/views/general.py" />
-        <option value="$PROJECT_DIR$/static/main.scss" />
-        <option value="$PROJECT_DIR$/vote/views/admin.py" />
         <option value="$PROJECT_DIR$/vote/templates/raw_text.html" />
+        <option value="$PROJECT_DIR$/vote/views/admin.py" />
+        <option value="$PROJECT_DIR$/vote/templates/vote/purge_user.html" />
+        <option value="$PROJECT_DIR$/static/main.scss" />
+        <option value="$PROJECT_DIR$/vote/templates/base.html" />
       </list>
     </option>
   </component>
@@ -557,12 +402,12 @@
       <workItem from="1565640904361" duration="20475000" />
       <workItem from="1565673740915" duration="2678000" />
       <workItem from="1565744326237" duration="13916000" />
-      <workItem from="1565912657496" duration="15542000" />
+      <workItem from="1565912657496" duration="20110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83603000" />
+    <option name="totallyTimeSpent" value="88171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,14 +422,14 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3271028" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.24091381" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.24091381" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -705,16 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vote/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vote/templates/blocks/crispy_file_field.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -729,34 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vote/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vote/templates/blocks/messages.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -780,6 +591,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vote/templates/vote/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="49" column="24" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vote/templates/raw_text.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vote/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vote/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vote/views/general.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -790,10 +642,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vote/templates/vote/check_votes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vote/views/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="174" column="31" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
+        <state relative-caret-position="-847">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -802,36 +661,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vote/templates/vote/purge_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        <state relative-caret-position="391">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vote/templates/vote/check_votes.html">
+    <entry file="file://$PROJECT_DIR$/static/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vote/templates/vote/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="49" column="24" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="49" selection-end-column="24" />
+        <state relative-caret-position="632">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="70" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vote/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vote/templates/raw_text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="394">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>

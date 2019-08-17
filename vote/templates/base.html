@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %} {% endblock %}</title>
 
-{#    LOADING CSS (INCLUDING BOOTSTRAP)#}
+    {#    LOADING CSS (INCLUDING BOOTSTRAP)#}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -28,7 +28,7 @@
         crossorigin="anonymous"></script>
 
 {#NAVBAR STUFF#}
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-lg bg-light navbar-light">
     <a class="navbar-brand" href="#">
         BWVote
     </a>
@@ -36,35 +36,39 @@
     <ul class="navbar-nav">
         <li class="nav-item">
             <a href="{% url 'index' %}" id="home" class="nav-link">
-                <button type="button" class="btn btn-outline-secondary">Home</button>
+                Home
             </a>
         </li>
 
         {#        ADMIN ONLY CONTROLS#}
         {% if user.is_superuser %}
             <li class="nav-item">
-                <a href="{% url 'import_export_headlines' %}" id="import-export-headlines" class="nav-link">
-                    <button type="button" class="btn btn-outline-secondary">Import/Export Headlines</button>
+                <a href="{% url 'import_export_headlines' %}" id="import-export-headlines"
+                   class="nav-link light-admin-background {% if not user.is_superuser %}disabled{% endif %}">
+                    Import/Export Headlines
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{% url 'check_votes' %}" id="check-votes" class="nav-link">
-                    <button type="button" class="btn btn-outline-secondary">Check Votes</button>
+                <a href="{% url 'check_votes' %}" id="check-votes"
+                   class="nav-link light-admin-background {% if not user.is_superuser %}disabled{% endif %}">
+                    Check Votes
                 </a>
             </li>
-            <li class="nav-item" >
-                <a href="{% url 'purge_user_page' %}" id="purge-user" class="nav-link">
-                    <button type="button" class="btn btn-outline-secondary">Purge Votes</button>
+            <li class="nav-item">
+                <a href="{% url 'purge_user_page' %}" id="purge-user"
+                   class="nav-link light-admin-background {% if not user.is_superuser %}disabled{% endif %}">
+                    Purge Votes
                 </a>
             </li>
-            <li class="nav-item" >
-                <a href="/admin" id="django-admin" class="nav-link">
-                    <button type="button" class="btn btn-outline-secondary">Django Admin</button>
+            <li class="nav-item">
+                <a href="/admin" id="django-admin"
+                   class="nav-link light-admin-background {% if not user.is_superuser %}disabled{% endif %}">
+                    Django Admin
                 </a>
             </li>
         {% endif %}
 
-        <li class="nav-item" >
+        <li class="nav-item">
             <a href="{% url 'logout' %}" id="logout" class="nav-link">
                 <button type="button" class="btn btn-outline-info">Logout</button>
             </a>
@@ -90,11 +94,10 @@
 
 {#HIGHLIGHT CURRENT PAGE#}
 <script>
-    var pageName = '{% spaceless %}{% block page_name %}{% endblock %}{% endspaceless %}'
-    $('#' + pageName + ' button')
-    {#.addClass('disabled')#}
-        .removeClass('btn-outline-secondary')
-        .addClass('btn-secondary')
+    var pageName = '{% spaceless %}{% block page_name %}{% endblock %}{% endspaceless %}';
+    $('#' + pageName)
+        .addClass('active')
+        .addClass('light-active-background');
 
     // Add "novalidate" to all forms so that the Bootstrap validation is used instead of the ugly HTML one
     $('form').attr('novalidate', 'novalidate')

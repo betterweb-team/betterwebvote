@@ -21,4 +21,35 @@ pre {
   overflow-y: scroll;
 }
 
+nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item {
+  min-height: 100% !important;
+}
+.nav-item a {
+  min-height: 100% !important;
+  line-height: 200% !important;
+}
+
+.light-admin-background {
+  color: #f1af10 !important;
+  background-color: #fcf0d1;
+  transition: 0.5s;
+}
+
+.light-active-background.light-admin-background {
+  color: #c38d0b !important;
+  background-color: #f7cf70;
+  transition: 0.5s;
+}
+
+.light-active-background {
+  color: #000 !important;
+  background-color: #dcdcdc;
+  transition: 0.5s;
+}
+
 /*# sourceMappingURL=main.css.map */

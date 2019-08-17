@@ -31,4 +31,41 @@ pre {
   }
 }
 
-// Lighter contextual backgrounds :)
+// Navbar stuff
+nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item {
+  min-height: 100% !important;
+  //border: 1px solid red;
+
+  a {
+    min-height: 100% !important;
+    line-height: 200% !important;
+  }
+}
+
+$admin-color: #f1af10;
+.light-admin-background {
+  color: $admin-color !important;
+  background-color: lighten($admin-color, 40%);
+  transition: 0.5s;
+}
+
+.light-active-background.light-admin-background {
+  color: darken($admin-color, 10%) !important;
+  background-color: lighten($admin-color, 20%);
+  transition: 0.5s;
+}
+
+.light-active-background {
+  color: #000 !important;
+  background-color: #dcdcdc;
+  transition: 0.5s;
+}
+
+//.disabled {
+//  filter: hue-rotate(-50deg) !important;
+//}

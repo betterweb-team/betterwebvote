@@ -52,9 +52,10 @@ PURGE USER PAGE
 @admin_page
 def purge_user_page(req):
     user_votes = []
-    for user in User.objects.all():
+    for user in User.objects.order_by('username'):
         vote_query = Vote.objects.filter(user__id=user.id)
         user_votes.append((user, vote_query.order_by('-timestamp'), vote_query.count()))
+
     return render(req, 'vote/purge_user.html', {'user_votes': user_votes})
 
 

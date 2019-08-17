@@ -23,7 +23,7 @@
 
                     <div class="list-group" id="list-tab" role="tablist">
                         {% for user, _, vote_count in user_votes %}
-                            <a class="list-group-item list-group-item-action {% if last_user.id == user.id %}active{% endif %}"
+                            <a class="list-group-item list-group-item-action {% if forloop.counter == 1 %}active{% endif %}"
                                id="list-user{{ forloop.counter }}-list"
                                data-toggle="list"
                                href="#list-user{{ forloop.counter }}" role="tab"
@@ -38,7 +38,7 @@
                 <div class="col-8">
                     <div class="tab-content" id="nav-tabContent">
                         {% for user, votes, count in user_votes %}
-                            <div class="tab-pane fade {% if last_user.id == user.id %}show active{% endif %}"
+                            <div class="tab-pane fade {% if forloop.counter == 1 %}show active{% endif %}"
                                  id="list-user{{ forloop.counter }}" role="tabpanel"
                                  aria-labelledby="list-user{{ forloop.counter }}-list">
                                 {% if count %}
