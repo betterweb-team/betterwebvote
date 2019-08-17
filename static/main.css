@@ -43,6 +43,11 @@ nav {
 .light-active-background.light-admin-background {
   color: #c38d0b !important;
   background-color: #f7cf70;
+}
+
+.light-admin-background:hover {
+  color: #c38d0b !important;
+  background-color: #f7cf70;
   transition: 0.5s;
 }
 

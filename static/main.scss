@@ -54,9 +54,17 @@ $admin-color: #f1af10;
   transition: 0.5s;
 }
 
-.light-active-background.light-admin-background {
+@mixin admin-color {
   color: darken($admin-color, 10%) !important;
   background-color: lighten($admin-color, 20%);
+}
+
+.light-active-background.light-admin-background {
+  @include admin-color;
+}
+
+.light-admin-background:hover {
+  @include admin-color;
   transition: 0.5s;
 }
 
